@@ -1,0 +1,72 @@
+{
+  "name": "digitmeter",
+  "license": "MIT",
+  "version": "0.0.1",
+  "homepage": "https://github.com/alattalatta/digitmeter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alattalatta/digitmeter.git"
+  },
+  "scripts": {
+    "build": "parcel build",
+    "dev": "parcel src/app.html"
+  },
+  "type": "module",
+  "source": "src/index.ts",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/types.d.ts",
+  "targets": {
+    "main": {
+      "optimize": true
+    },
+    "module": {
+      "optimize": true
+    }
+  },
+  "browserslist": "chrome 50, safari 12",
+  "engines": {
+    "node": ">=14"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./styles": "./dist/index.css"
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "@swc/helpers": "^0.5.1",
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "devDependencies": {
+    "@alattalatta/eslint-config": "^2.0.1",
+    "@alattalatta/prettier-config": "^2.0.0",
+    "@changesets/cli": "^2.26.2",
+    "@parcel/core": "^2.9.3",
+    "@parcel/packager-ts": "^2.9.3",
+    "@parcel/transformer-typescript-types": "^2.9.3",
+    "@types/node": "^18.17.0",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.45.0",
+    "eslint-import-resolver-typescript": "^3.5.5",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.0",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
+  "prettier": "@alattalatta/prettier-config",
+  "packageManager": "pnpm@8.6.9"
+}
