@@ -3,23 +3,6 @@
   position: relative;
 }
 
-@keyframes hotstarter {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.hotstarter {
-  width: 5px;
-  height: 5px;
-  animation: hotstarter 1s infinite;
-  background: red;
-  display: block;
-  position: absolute;
-}
-
 .reference {
   display: block;
   position: absolute;

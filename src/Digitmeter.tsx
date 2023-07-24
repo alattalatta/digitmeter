@@ -105,7 +105,6 @@ export const Digitmeter: React.FC<DigitmeterProps> = ({
 
   return (
     <span className={[styles.root, className].join(' ')} {...props}>
-      <span className={styles.hotstarter} />
       <span ref={$ref} className={styles.reference}>
         8
       </span>
@@ -135,7 +134,7 @@ type WheelProps = {
   value: number
 }
 
-const NUMBERS = '1234567890'.split('').reverse()
+const NUMBERS = '0987654321'.split('')
 
 export const Wheel: React.FC<WheelProps> = ({ delay, diff, value }) => {
   const { height, transitionDuration, value: fullValue } = useContext(DigitmeterContext)

@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import { createRoot } from 'react-dom/client'
+import { render } from 'react-dom'
 
 import { Digitmeter, Wheel } from './Digitmeter'
 
@@ -28,5 +28,4 @@ function App(): JSX.Element {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-const root = createRoot(document.getElementById('root')!)
-root.render(<App />)
+render(<App />, document.getElementById('root'))
